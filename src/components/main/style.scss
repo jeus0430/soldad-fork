@@ -1,0 +1,9 @@
+@import "../../styles/variables.scss";
+
+main {
+  background-color: $grey-background-color;
+  max-width: 128rem;
+  text-align: center;
+  padding: 0 4%;
+  background-image: url("../../resources/images/hero-bg.jpg");
+}
