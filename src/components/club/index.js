@@ -2,6 +2,7 @@ import "./style.scss"
 import Discord from "../../resources/images/discord-black.svg"
 import Twitter from "../../resources/images/twitter-black.svg"
 import Bullish from "../../resources/images/bullish.svg"
+import SPC from "../../resources/images/download (1).webp"
 
 const Club = () => {
   return (
@@ -37,6 +38,20 @@ const Club = () => {
           </div>
           <div>
             As a Bullish Llama owner, you gain access to a Bullish Club app which will allow you to collect and herd your Llamas in one place. Future areas and perks can be unlocked by the community through roadmap activation together with charity donations.
+          </div>
+        </div>
+        <div className="partnership">
+          <img src={SPC} />
+          <div className="partnership-main">
+            <h2>Partnership with SPC</h2>
+            <h3>
+              We are happy to announce collaboration with amazing Space Punks Club.
+            </h3>
+          </div>
+          <div>
+            <button className="learn">
+              Learn more
+            </button>
           </div>
         </div>
       </div>

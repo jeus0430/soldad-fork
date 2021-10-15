@@ -9,6 +9,8 @@ const Home = () => {
     <Layout>
       <Introduction />
       <Club />
+      <div className="big-img">
+      </div>
     </Layout>
   )
 }
