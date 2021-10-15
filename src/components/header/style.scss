@@ -1,62 +1,80 @@
 @import "../../styles/variables.scss";
 
-.header {
-  padding: 5px 5%;
+.navbar {
   background-color: $black;
-  height: 60px;
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  height: 100px;
+  margin: auto;
+  align-items: center;
+}
+
+.in-links {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  li {
+    display: inline;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 20px;
+  }
+}
+
+.page-logo {
+  width: 120px;
+  position: absolute;
+  left: calc(50% - 60px);
+}
+
+.out-links {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
-  flex-grow: 0;
-  img {
-    height: 100%;
-  }
 
-  ul {
-    display: flex;
-    align-items: center;
+  .social-links {
+    list-style: none;
+    margin-bottom: 0;
+    padding-right: 30px;
 
     li {
-      white-space: nowrap;
-      padding: 0 10px;
-      margin: 0 5px;
-      border-radius: 3px;
+      padding: 10px;
+      display: inline;
     }
   }
 
-  .btn-bar {
-    margin-left: auto;
-    li {
-      background-color: #d93978;
-    }
+  .get-btn {
+    @include btn-glow;
+    @include btn;
+  }
+}
+
+.toggle {
+  display: none;
+  position: relative;
+  left: 10%;
+}
+.folded {
+  display: inline-block;
+}
+.foldable {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .toggle {
+    display: block;
+    background-color: transparent;
+    color: white;
+    border: none;
   }
 
-  .icon-bar {
-    padding-left: 20px;
-    li {
-      color: #d93978;
-    }
-  }
-
-  & > a {
-    display: flex;
-    height: 100%;
-    align-items: center;
-
-    img {
-      height: 100%;
-      margin-right: 0.75rem;
-    }
-
-    span {
-      color: $yellow-text;
-      font-size: 30px;
-      font-weight: bold;
-    }
-  }
-  span {
-    margin-left: auto;
-    margin-right: 1.5rem;
-    color: $yellow-text;
+  .in-links,
+  .out-links {
+    display: none;
   }
 }

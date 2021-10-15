@@ -1,35 +1,52 @@
-import { Link } from "react-router-dom"
 import "./style.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons"
-import Logo from "../../resources/images/logo.png"
+import pageLogo from "../../resources/images/download.webp"
+import OpenSea from "../../resources/images/opensea.svg"
+import Discord from "../../resources/images/discord.svg"
+import Twitter from "../../resources/images/twitter.svg"
+import Instgram from "../../resources/images/instagram.svg"
+import Foldable from "../../resources/images/foldable.svg"
+import Folded from "../../resources/images/folded.svg"
 
 const Header = () => {
   return (
-    <header className="header">
-      <img src={Logo} />
-      <ul className="list-unstyled">
-        <li>TOKENOMICS</li>
-        <li>MEET THE PUNKS</li>
-        <li>FAQ</li>
-        <li>ABOUT</li>
-      </ul>
-      <ul className="list-unstyled btn-bar">
-        <li>ISSUE %1</li>
-        <li>METAHERO IDENTITIES</li>
-        <li>METAHERO IDENTITIES</li>
-        <li>
-        </li>
-      </ul>
-      <ul className="list-unstyled icon-bar">
-        <li>
-          <FontAwesomeIcon icon={faTwitter} />
-        </li>
-        <li>
-          <FontAwesomeIcon icon={faDiscord} />
-        </li>
-      </ul>
-    </header>
+    <>
+      <nav className="navbar">
+        <div className="container">
+          <button className="toggle">
+            <img src={Foldable} className="foldable" />
+            <img src={Folded} className="folded" />
+          </button>
+          <ul className="in-links">
+            <li>About</li>
+            <li>Collection</li>
+            <li>Mobile app</li>
+            <li>Roadmap</li>
+          </ul>
+          <img src={pageLogo} alt="page-logo" className="page-logo" />
+          <div className="out-links">
+            <ul className="social-links">
+              <li>
+                <img src={OpenSea} alt="open-sea" />
+              </li>
+              <li>
+                <img src={Discord} alt="discord" />
+              </li>
+              <li>
+                <img src={Twitter} alt="twitter" />
+              </li>
+              <li>
+                <img src={Instgram} alt="instagram" />
+              </li>
+            </ul>
+            <button className="get-btn">
+              Get Llama
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div className="screen-blocker">
+      </div>
+    </>
   )
 }
 

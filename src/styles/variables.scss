@@ -38,3 +38,22 @@ $Pink: #fd17fd;
 
 // Red Colors
 $Magenta: #d80073;
+
+@mixin btn-glow {
+  &:hover {
+    box-shadow: rgb(255, 255, 255) 0px 0px 20px;
+  }
+}
+
+@mixin btn {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: $white;
+  box-shadow: #ffffffd9 0px 0px 14px;
+  font-size: 18px;
+  padding: 10px 36px;
+  font-weight: 500;
+}
+
+@mixin btn-sm {
+}
