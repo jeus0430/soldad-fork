@@ -1,0 +1,35 @@
+.about {
+  background-image: url("../../resources/images/hero-bg.jpg");
+  max-width: 128rem;
+  padding: 0px 4rem;
+  text-align: center;
+  box-sizing: content-box;
+  &-title {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+  }
+
+  &-img {
+    display: flex;
+    &-container {
+      padding: 0 3rem;
+      &-title {
+        margin-bottom: 3rem;
+      }
+      &-avatar {
+        max-width: 100%;
+      }
+      &-text {
+        color: rgb(255, 255, 255);
+        font-size: 5rem;
+        font-weight: bold;
+        height: 100%;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+      }
+    }
+  }
+}
