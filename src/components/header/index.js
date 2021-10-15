@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <>
       <nav className="navbar">
-        <div className="container">
+        <div className="container-header">
           <button className="toggle">
             <img src={Foldable} className="foldable" />
             <img src={Folded} className="folded" />

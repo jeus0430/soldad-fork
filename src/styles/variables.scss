@@ -4,7 +4,7 @@ $white: #fff;
 $black: #000;
 
 // Yellow Colors
-$yellow: #e4b82e;
+$yellow: rgb(255, 214, 66);
 $yellow-text: #f3ba2f;
 
 $grey-text: #1e2329;
@@ -46,7 +46,7 @@ $Magenta: #d80073;
 }
 
 @mixin btn {
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid transparent;
   background-color: $white;
   box-shadow: #ffffffd9 0px 0px 14px;
@@ -55,5 +55,13 @@ $Magenta: #d80073;
   font-weight: 500;
 }
 
+@mixin btn-lg {
+  padding: 20px 50px;
+}
+
 @mixin btn-sm {
+}
+
+.yellow {
+  color: $yellow;
 }
